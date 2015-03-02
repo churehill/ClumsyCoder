@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>800</width>
+    <height>600</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>GVIM</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="images.qrc">
+    <normaloff>:/images/gvim.png</normaloff>:/images/gvim.png</iconset>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <layout class="QGridLayout" name="gridLayout">
+    <item row="0" column="0">
+     <widget class="QTextEdit" name="textEdit">
+      <property name="font">
+       <font>
+        <family>Consolas</family>
+        <pointsize>14</pointsize>
+        <weight>50</weight>
+        <italic>true</italic>
+        <bold>false</bold>
+       </font>
+      </property>
+      <property name="focusPolicy">
+       <enum>Qt::ClickFocus</enum>
+      </property>
+      <property name="tabStopWidth">
+       <number>50</number>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>800</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menu_F">
+    <property name="title">
+     <string>文件(&amp;F)</string>
+    </property>
+    <addaction name="action_O"/>
+    <addaction name="actionGLHF"/>
+    <addaction name="separator"/>
+    <addaction name="actionCoder"/>
+   </widget>
+   <widget class="QMenu" name="menu_E">
+    <property name="title">
+     <string>编辑(&amp;E)</string>
+    </property>
+   </widget>
+   <widget class="QMenu" name="menu_T">
+    <property name="title">
+     <string>工具(&amp;T)</string>
+    </property>
+    <addaction name="action_T"/>
+    <addaction name="separator"/>
+    <addaction name="actionCoder_2"/>
+   </widget>
+   <widget class="QMenu" name="menu_S">
+    <property name="title">
+     <string>语法(&amp;S)</string>
+    </property>
+   </widget>
+   <widget class="QMenu" name="menu_B">
+    <property name="title">
+     <string>缓冲区(&amp;B)</string>
+    </property>
+   </widget>
+   <widget class="QMenu" name="menu_W">
+    <property name="title">
+     <string>窗口(&amp;W)</string>
+    </property>
+   </widget>
+   <widget class="QMenu" name="menu_H">
+    <property name="title">
+     <string>帮助(&amp;H)</string>
+    </property>
+    <addaction name="actionMade_By_churehill"/>
+    <addaction name="separator"/>
+   </widget>
+   <addaction name="menu_F"/>
+   <addaction name="menu_E"/>
+   <addaction name="menu_T"/>
+   <addaction name="menu_S"/>
+   <addaction name="menu_B"/>
+   <addaction name="menu_W"/>
+   <addaction name="menu_H"/>
+  </widget>
+  <action name="action_O">
+   <property name="text">
+    <string>打开(&amp;O)</string>
+   </property>
+  </action>
+  <action name="action_T">
+   <property name="text">
+    <string>选项(&amp;T)</string>
+   </property>
+  </action>
+  <action name="actionGLHF">
+   <property name="text">
+    <string>GLHF</string>
+   </property>
+  </action>
+  <action name="actionCoder">
+   <property name="text">
+    <string>coder</string>
+   </property>
+  </action>
+  <action name="actionCoder_2">
+   <property name="text">
+    <string>Coder</string>
+   </property>
+  </action>
+  <action name="actionMade_By_churehill">
+   <property name="text">
+    <string>Made By churehill</string>
+   </property>
+  </action>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources>
+  <include location="images.qrc"/>
+ </resources>
+ <connections/>
+</ui>
